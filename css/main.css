@@ -83,24 +83,16 @@
         background-position: 90% 70px;
         background-image: url(../img/home.jpg);
         background-size: 1000px;
-      
       }
       .home-area .home-name{
         font-size:38px;
-        
       }
       .home-area .home-headline{
         font-size:22px;
       } 
-      /* .home-area .main-logo1 {
-      width: 100px;
-      margin-top: 30px;
-    } */
-
-    .home-area .home-content .text-center{
-      text-align: left;
-      
-    }
+      .home-area .home-content .text-center{
+        text-align: left;
+      }
   }
 
 
@@ -188,6 +180,12 @@
     }
     .info-section .info-content .content-title{font-size:22px;font-weight:700;line-height:1.6;margin-bottom:16px}.info-section .info-content .content-description{font-size:15px}.info-section .info-content .content-description p:last-child{border-bottom:2px solid rgba(255,255,255,.08);margin-bottom:0;padding-bottom:29px}.info-section .info-content .content-info{font-size:15px;margin-bottom:4px;padding:29px 0}.info-section .info-content .content-info>.row:last-child .single-info{margin-bottom:0}.info-section .info-content .content-info .single-info{margin-bottom:10px}.info-section .info-content .content-info .single-info>span{color:#dadada;font-weight:400;margin-right:10px}.info-section .info-content .content-info .single-info>p{display:inline-block;margin-bottom:0}.info-section .info-content .content-download{margin-right:23px}.info-section .info-content .content-follow{-ms-flex-align:center;align-items:center;display:inline-block;display:-ms-flexbox;display:flex;line-height:100%;margin-bottom:0}.info-section .info-content .content-follow:before{background-color:rgba(255,255,255,.25);content:'';height:2px;margin-right:23px;width:60px}.info-section .info-content .content-follow li{font-size:21px}.info-section .info-content .content-follow li:not(last-child){margin-right:14px}.info-section .info-content .content-follow li a{color:#cecece}
     
+    @media (min-width:320px) and (max-width:576px) {
+      .home-area .home-content img{
+        width: 70px;
+      }
+   }
+   
     @media (min-width:992px) and (max-width:1199.98px){
       .info-section .info-img img{
         -o-object-fit:cover;
