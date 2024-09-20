@@ -79,7 +79,7 @@
           <h1 class="home-name">Priyanka <span>Arora</span></h1>
           <!-- <h4 class="cd-headline clip home-headline">I’m a <span class="cd-words-wrapper single-headline"><b class="is-visible">Developer</b><b>Designer</b><b>Freelancer</b></span></h4> -->
           <h4 class="cd-headline clip home-headline"><span class=" single-headline"><b class="is-visible">#TheUnusualTherapist </b></span></h4>
-          <img src="img/logo-1.png" class="main-logo1" alt="">
+          <img src="img/logo-1.png" class="main-logo1" alt="priyanka-arora">
         </div>
       </div>
     </div>
@@ -1027,8 +1027,21 @@
   <!-- removeIf(customizerDist)-->
   <script src="../customizer/main.js"></script>
   <!-- endremoveIf(customizerDist)-->
+
+  <script>
+    document.querySelectorAll('.flip-box').forEach(box => {
+      box.addEventListener('click', () => {
+        box.classList.toggle('flip-active');
+
+        // Automatically flip back after 2 seconds (2000ms)
+        setTimeout(() => {
+          box.classList.add('flip-back');
+          setTimeout(() => box.classList.remove('flip-back', 'flip-active'), 600); // Reset classes after animation
+        }, 2000);
+      });
+    });
+  </script>
 </body>
 
 
-<!-- Mirrored from kaleidoscopic-pie-2341a3.netlify.app/template/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Aug 2024 10:08:36 GMT -->
 </html>
